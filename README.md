@@ -5,18 +5,18 @@ O objetivo foi criar uma página moderna e funcional, destacando a identidade vi
 
 🚀 **Tecnologias Chave:**
 
-    **HTML5**
+    HTML5
 
-    **CSS3**
+    CSS3
 
-    **JavaScript** (incluindo **Swiper.js** para o carrossel de depoimentos)
+    JavaScript (incluindo Swiper.js para o carrossel de depoimentos)
 
-    **Figma** (para o design e prototipagem)
+    Figma (para o design e prototipagem)
 
 ✨ **Destaques do Projeto:**
 
-    **Design Profissional:** Todo o layout e UX foram prototipados no Figma.
+    Design Profissional: Todo o layout e UX foram prototipados no Figma.
 
-    **Carrossel Interativo:** Implementação de um carrossel de depoimentos dinâmico.
+    Carrossel Interativo: Implementação de um carrossel de depoimentos dinâmico.
 
-    **Estrutura Limpa:** Código organizado e modular.
+    Estrutura Limpa: Código organizado e modular.
