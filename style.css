@@ -320,3 +320,50 @@ body {
     padding-top: 13px;
     z-index: 2;
 }
+
+.about-us-section {
+    margin-top: var(--espaço-entre-section);
+    margin: var(--espaço-entre-section) var(--espaço-lateral) 0 var(--espaço-lateral);
+}
+
+.about-us-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.about-us-text-container {
+    flex: 2 1 600px;
+}
+
+.about-us-text {
+    font-family: var(--font-montserrat); 
+}
+
+.about-us-img-container {
+    display: flex;
+    flex: 1 1 600px;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.about-us-img:first-child {
+    background-image: url(/IMG/SOBRE_NOS/sobre_nos_img_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 285px;
+    min-height: 972px;
+    flex: 1 1 285px;
+}
+
+.about-us-img:last-child {
+    background-image: url(/IMG/SOBRE_NOS/sobre_nos_img_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 285px;
+    min-height: 580px;
+    flex: 1 1 285px;
+}
