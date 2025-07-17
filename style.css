@@ -204,7 +204,7 @@ body {
 }
 
 .hero-section {
-    background-image: url('/IMG/HERO SECTION/hero_section.jpg');
+    background-image: url('/IMG/HERO_SECTION/hero_section.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -322,7 +322,6 @@ body {
 }
 
 .about-us-section {
-    margin-top: var(--espaço-entre-section);
     margin: var(--espaço-entre-section) var(--espaço-lateral) 0 var(--espaço-lateral);
 }
 
@@ -333,11 +332,18 @@ body {
 }
 
 .about-us-text-container {
-    flex: 2 1 600px;
+    align-items: stretch;
+    flex: 2 1 800px;
+    font-weight: var(--font-weight-regular);
+    font-size: 28px;
 }
 
 .about-us-text {
     font-family: var(--font-montserrat); 
+}
+
+.about-us-text:not(:last-child) {
+    margin-bottom: 70px;
 }
 
 .about-us-img-container {
@@ -353,9 +359,10 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-width: 285px;
-    min-height: 972px;
-    flex: 1 1 285px;
+    min-width: 225px;
+    min-height: 79vh;
+    max-height: 80vh;
+    flex: 1 1 225px;
 }
 
 .about-us-img:last-child {
@@ -363,7 +370,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-width: 285px;
-    min-height: 580px;
-    flex: 1 1 285px;
+    min-width: 225px;
+    min-height: 60vh;
+    flex: 1 1 225px;
 }
