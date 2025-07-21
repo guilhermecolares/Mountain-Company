@@ -374,3 +374,58 @@ body {
     min-height: 60vh;
     flex: 1 1 225px;
 }
+
+.customer-testimonials-section {
+    margin-top: var(--espaço-entre-section);
+}
+
+.swiper-wrapper {
+    display: flex;
+    background-color: var(--cor-cinza-background);
+    margin: 0px var(--espaço-lateral);
+    padding: 110px 40px;
+    border-radius: 40px;
+    gap: 33px;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.swiper-slide {
+    display: flex;
+    flex: 1 1 548px;
+}
+
+.customer-testimonials-card {
+    display: flex;
+    flex: 1 1 548px;
+    height: 420px;
+    flex-direction: column;
+    background-color: #524b4b;
+    border-radius: 35px;
+    padding: 16px 0px 0px 53px;
+}
+
+.client-name {
+    font-family: var(--font-montserrat);
+    font-weight: var(--font-weight-bold);
+    font-size: 40px;
+    color: var(--cor-amarelo-light);
+}
+
+.client-role {
+    font-family: var(--font-montserrat);
+    font-weight: var(--font-weight-semibold);
+    font-size: 20px;
+    color: var(--cor-amarelo-ultra-light);
+}
+
+.client-quote {
+    font-family: var(--font-nunito);
+    font-weight: var(--font-weight-semibold);
+    font-size: 24px;
+    max-width: 300px;
+}
+
+.client-photo {
+    display: none;
+}
