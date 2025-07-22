@@ -381,28 +381,72 @@ body {
 
 .swiper-wrapper {
     display: flex;
-    background-color: var(--cor-cinza-background);
-    margin: 0px var(--espaço-lateral);
-    padding: 110px 40px;
-    border-radius: 40px;
-    gap: 33px;
+    padding: 110px 0px;
     align-items: stretch;
-    justify-content: space-between;
 }
 
 .swiper-slide {
     display: flex;
-    flex: 1 1 548px;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    background-color: var(--cor-cinza-background);
+    border-radius: 40px;
+    width: calc(100% - (2 * var(--espaço-lateral)));
 }
 
 .customer-testimonials-card {
     display: flex;
-    flex: 1 1 548px;
+    flex: 0 0 auto;
     height: 420px;
     flex-direction: column;
-    background-color: #524b4b;
+    background-color: #00000086;
     border-radius: 35px;
     padding: 16px 0px 0px 53px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.swiper-slide-je-santiago .customer-testimonials-card {
+    background-image: url('IMG/CLIENTES/je_santiago.jpg');
+    background-position: 0% 45%;
+    background-size: 120%;
+}
+
+.swiper-slide-taty-montero .customer-testimonials-card {
+    background-image: url('IMG/CLIENTES/taty_montero.jpg');
+    background-position: 80% 45%;
+    background-size: 140%;
+}
+
+.swiper-slide-zendaya-bao .customer-testimonials-card {
+    background-image: url('IMG/CLIENTES/zendaya_bao.jpg');
+    background-position: 0% 75%;
+    background-size: 100%;
+}
+
+.swiper-slide-carl-anderson .customer-testimonials-card {
+    background-image: url('IMG/CLIENTES/carl_anderson.jpg');
+    background-position: 20% 90%;
+    background-size: 180%;
+}
+
+.swiper-slide-mary-page .customer-testimonials-card {
+    background-image: url('IMG/CLIENTES/mary_page.jpg');
+    background-position: 0% 50%;
+    background-size: 125%;
+    background-color: #00000096;
+}
+
+.swiper-slide-marcus-smart .customer-testimonials-card {
+    background-image: url('IMG/CLIENTES/marcus_smart.jpg');
+    background-position: 30% 50%;
+    background-size: 120%;
 }
 
 .client-name {
@@ -424,8 +468,4 @@ body {
     font-weight: var(--font-weight-semibold);
     font-size: 24px;
     max-width: 300px;
-}
-
-.client-photo {
-    display: none;
 }
