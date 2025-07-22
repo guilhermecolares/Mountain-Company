@@ -26,3 +26,16 @@ const swiper = new Swiper('.mySwiper', {
         }
     }
 });
+
+const prevButton = document.querySelector('#prevButton');
+const nextButton = document.querySelector('#nextButton');
+
+if (prevButton && nextButton) {
+    prevButton.addEventListener('click', () => {
+        swiper.slidePrev();
+    });
+
+    nextButton.addEventListener('click', () => {
+        swiper.slideNext();
+    });
+}
