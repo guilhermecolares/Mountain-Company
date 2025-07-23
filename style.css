@@ -4,6 +4,7 @@
 
 html, body {
     height: 100%;
+    font-size: 16px;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ul {
@@ -379,6 +380,13 @@ body {
     margin-top: var(--espaço-entre-section);
 }
 
+.swiper {
+    overflow: hidden;
+    background-color: var(--cor-cinza-background);
+    border-radius: 40px;
+    width: calc(100% - (2 * var(--espaço-lateral)));
+}
+
 .swiper-wrapper {
     display: flex;
     padding-top: 110px;
@@ -395,65 +403,68 @@ body {
     transform: scale(0.95);
 }
 
-.swiper {
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    background-color: var(--cor-cinza-background);
-    border-radius: 40px;
-    width: calc(100% - (2 * var(--espaço-lateral)));
-}
-
 .customer-testimonials-card {
     display: flex;
     flex: 0 0 auto;
     height: 420px;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
     background-color: #00000086;
     border-radius: 35px;
-    padding: 16px 0px 0px 53px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
+    padding: 1rem 1rem 0px 3.3125rem;
 }
 
-.swiper-slide-je-santiago .customer-testimonials-card {
-    background-image: url('IMG/CLIENTES/je_santiago.jpg');
-    background-position: 0% 45%;
-    background-size: 120%;
+.customer-testimonials-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    border-radius: inherit;
+    z-index: -1;
+    transform: scale(1.8);
 }
 
-.swiper-slide-taty-montero .customer-testimonials-card {
-    background-image: url('IMG/CLIENTES/taty_montero.jpg');
-    background-position: 80% 45%;
-    background-size: 140%;
+.swiper-slide-je-santiago .customer-testimonials-card img {
+    transform: scale(1.5);
+    object-position: 0% 40%;
 }
 
-.swiper-slide-zendaya-bao .customer-testimonials-card {
-    background-image: url('IMG/CLIENTES/zendaya_bao.jpg');
-    background-position: 0% 75%;
-    background-size: 100%;
+.swiper-slide-taty-montero .customer-testimonials-card img {
+    transform: scale(1.25);
+    object-position: 100% 100%;
 }
 
-.swiper-slide-carl-anderson .customer-testimonials-card {
-    background-image: url('IMG/CLIENTES/carl_anderson.jpg');
-    background-position: 20% 90%;
-    background-size: 180%;
+.swiper-slide-zendaya-bao .customer-testimonials-card img {
+    transform: scale(1.1);
+    object-position: center 75%;
 }
 
-.swiper-slide-mary-page .customer-testimonials-card {
-    background-image: url('IMG/CLIENTES/mary_page.jpg');
-    background-position: 0% 50%;
-    background-size: 125%;
-    background-color: #00000096;
+.swiper-slide-carl-anderson .customer-testimonials-card img {
+    transform: scale(1.3);
+    object-position: 85% 90%;
 }
 
-.swiper-slide-marcus-smart .customer-testimonials-card {
-    background-image: url('IMG/CLIENTES/marcus_smart.jpg');
-    background-position: 30% 50%;
-    background-size: 120%;
+.swiper-slide-mary-page .customer-testimonials-card img {
+    transform: scale(1.2);
+    object-position: 65% 50%;
 }
+
+.swiper-slide-marcus-smart .customer-testimonials-card img {
+    transform: scale(1.18);
+    object-position: 75% 50%;
+}
+
+@media (max-width: 1500px) {
+.customer-testimonials-card img {
+transform: scale(1.0);
+object-position: center center;
+}
+}
+
 
 .client-name {
     font-family: var(--font-montserrat);
@@ -471,9 +482,9 @@ body {
 
 .client-quote {
     font-family: var(--font-nunito);
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-regular);
     font-size: 24px;
-    max-width: 300px;
+    max-width: 320px;
 }
 
 .swiper-navigation-buttons {
@@ -481,6 +492,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    margin-bottom: 20px;
     gap: 40px;
 }
 
@@ -490,7 +502,6 @@ body {
     border-radius: 50%;
     border: #E3E229 3px solid;
     padding: 15px;
-    margin-bottom: 20px;
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
