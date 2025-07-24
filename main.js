@@ -7,19 +7,20 @@ const swiper = new Swiper('.mySwiper', {
         el: '.swiper-pagination',
         clickable: true,
     },
-    // autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
     breakpoints: {
         1300: {
             slidesPerView: 3,
             spaceBetween: 30,
-            centeredSlides: false
+            centeredSlides: true,
         },
         1024: {
             slidesPerView: 2,
             spaceBetween: 20,
+            centeredSlides: false,
         },
         768: {
             slidesPerView: 1,
