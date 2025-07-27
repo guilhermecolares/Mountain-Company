@@ -544,4 +544,46 @@ body {
 
 .plans-section {
     margin-top: var(--espaço-entre-section);
+    padding: 0rem var(--espaço-lateral);
+}
+
+.plans-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    background-color: var(--cor-cinza-background);
+    border-radius: 2.5rem;
+    padding: 1.875rem 2.5rem;
+    gap: 2.0625rem;
+}
+
+.plans-card {
+    background-color: var(--cor-cinza-escuro);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    border-radius: 1.875rem;
+    justify-content: center;
+    padding: 2.375rem 0.3125rem 4.375rem 1.25rem;
+}
+
+.plans-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plans-price {
+    color: var(--cor-cinza-claro);
+    font-weight: var(--font-weight-bold);
+    font-size: 2.25rem;
+}
+
+/* .essencial-title {
+
+} */
+
+.plans-benefits-list {
+    padding-left: 1.25rem;
 }
