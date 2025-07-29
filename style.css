@@ -728,3 +728,52 @@ body {
     color: var(--cor-cinza-escuro);
     border-color: var(--cor-roxo-exclusive);
 }
+
+.contact-section {
+    margin-top: var(--espaço-entre-section);
+    padding: 0rem var(--espaço-lateral);
+}
+
+.contact-container {
+    display: flex;
+    background-color: var(--cor-cinza-background);
+    border-radius: 2.5rem;
+}
+
+.contact-text-area {
+    display: flex;
+    flex: 2 1 75rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+    padding: 3.125rem 2.5rem;
+}
+
+.contact-text-area h4 {
+    font-size: 4rem;
+    font-family: var(--font-montserrat);
+    font-weight: var(--font-weight-extra-bold);
+    text-align: center;
+}
+
+.contact-text-area p {
+    font-size: 2rem;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.4;
+}
+
+.contact-form {
+    display: flex;
+    flex: 1 1 35.6875rem;
+    flex-direction: column;
+    background-color: var(--cor-cinza-escuro);
+    border-radius: 2.5rem;
+    align-items: center;
+    margin: 3.125rem 2.5rem;;
+}
+
+.contact-form h5 {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    padding-top: 2.125rem;
+}
