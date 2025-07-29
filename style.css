@@ -147,14 +147,17 @@ body {
 
 .essencial-color {
     background-color: var(--cor-branco);
+    border-color: var(--cor-branco);
 }
 
 .premium-color {
     background-color: var(--cor-amarelo-regular);
+    border-color: var(--cor-amarelo-regular);
 }
 
 .exclusive-color {
     background-color: var(--cor-roxo-exclusive);
+    border-color: var(--cor-roxo-exclusive);
 }
 
 .essencial {
@@ -622,21 +625,106 @@ body {
 }
 
 .plans-benefits-list {
+    list-style: none;
     font-size: 1.5rem;
     font-family: var(--font-montserrat);
     font-weight: var(--font-weight-regular);
     line-height: 1.2;
-    padding-left: 1.25rem;
     text-align: left;
     width: 100%;
 }
 
 .plans-benefits-list li {
     margin-bottom: 13px;
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+.plans-benefits-list li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    font-size: 2em;
+    line-height: 1;
+    top: -0.25em
+}
+
+.plans-card.card-essencial .plans-benefits-list li::before {
+    color: var(--cor-branco);
+}
+
+.plans-card.card-premium .plans-benefits-list li::before {
+    color: var(--cor-amarelo-regular);
+}
+
+.plans-card.card-exclusive .plans-benefits-list li::before {
+    color: var(--cor-roxo-exclusive);
 }
 
 .plans-button {
-    margin-top: 20px;
-    max-width: 26.875rem;
+    margin-top: 1.25rem;
+    width: 70%;
+    height: 5.3125rem;
     align-self: center;
+    border-radius: 3.75rem;
+    background-color: var(--cor-cinza-escuro);
+    border: 0.25rem solid;
+    font-size: 1.625rem;
+    font-weight: var(--font-weight-bold);
+    transition: 0.4s ease;
+}
+
+@media (max-width: 600px) {
+    .plans-card-container {
+        padding: 1rem 0rem;
+    }
+
+    .plans-section {
+        padding: 0rem;
+    }
+
+    .plans-price {
+        color: var(--cor-cinza-claro);
+        font-weight: var(--font-weight-bold);
+        font-size: 1.85rem;
+        line-height: 0.5;
+    }
+
+    .plans-title {
+        font-size: 3rem;
+    }
+
+    .auxiliary-text-plans {
+        font-size: 1rem;
+    }
+
+    .benefits-text-plans {
+        font-size: 1rem;
+    }
+
+    .plans-benefits-list {
+        font-size: 1rem;
+    }
+
+    .plans-button {
+        font-size: 1.375rem;
+    }
+}
+
+.plans-button.essencial:hover {
+    background-color: var(--cor-branco);
+    color: var(--cor-cinza-escuro);
+    border-color: var(--cor-branco);
+}
+
+.plans-button.premium:hover {
+    background-color: var(--cor-amarelo-regular);
+    color: var(--cor-cinza-escuro);
+    border-color: var(--cor-amarelo-regular);
+}
+
+.plans-button.exclusive:hover {
+    background-color: var(--cor-roxo-exclusive);
+    color: var(--cor-cinza-escuro);
+    border-color: var(--cor-roxo-exclusive);
 }
