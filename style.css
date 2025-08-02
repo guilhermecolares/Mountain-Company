@@ -277,6 +277,26 @@ body {
     transition: 0.3s ease;
 }
 
+@media (max-width: 600px) {
+    .hero-section-content button {
+        font-size: 2rem;
+    }
+
+    .hero-section-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero-section-content button {
+        font-size: 1.5rem;
+    }
+
+    .hero-section-content p {
+        font-size: 1rem;
+    }
+}
+
 .hero-section-content button:hover {
     border-radius: 1.875rem;
 }
@@ -359,6 +379,12 @@ body {
     z-index: 2;
 }
 
+@media (max-width: 520px) {
+    .card-service-title {
+        font-size: 2.7rem;
+    }
+}
+
 .about-us-section {
     margin: var(--espaço-entre-section) var(--espaço-lateral) 0 var(--espaço-lateral);
 }
@@ -374,6 +400,24 @@ body {
     flex: 2 1 50rem;
     font-weight: var(--font-weight-regular);
     font-size: 1.75rem;
+}
+
+@media (max-width: 720px) {
+    .about-us-text-container {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .about-us-text-container {
+        font-size: 1.2rem;
+    }
+} 
+
+@media (max-width: 420px) {
+    .about-us-text-container {
+        font-size: 1rem;
+    }
 }
 
 .about-us-text {
@@ -967,4 +1011,31 @@ body {
 .contact-button:hover {
     color: var(--cor-cinza-escuro);
     background-color: var(--cor-branco);
+}
+
+footer {
+    display: flex;
+    background-color: var(--cor-amarelo-light);
+    color: black;
+    margin-top: 60px;
+    align-items: center;
+    padding: 20px 40px; 
+}
+
+footer p {
+    font-family: var(--font-montserrat);
+    font-size: 20px;
+    font-weight: var(--font-weight-extra-bold);
+    flex-grow: 1;
+    text-align: center;
+}
+
+.icons-footer {
+    font-size: 40px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
 }
