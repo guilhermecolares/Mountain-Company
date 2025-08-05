@@ -231,7 +231,6 @@ body {
 .main-navbar ul li a:hover {
     color: var(--cor-amarelo-forte);
     transition: color 0.3s ease;
-    text-decoration: underline;
 }
 
 .main-navbar ul li:not(:first-child)::before {
@@ -239,6 +238,127 @@ body {
     color: var(--cor-branco);
     margin: 0 0.625rem;
     font-size: 1.75rem;
+}
+
+@media (max-width: 1700px) {
+    .logo-link span:first-child {
+        font-size: 4rem;
+        color: var(--cor-amarelo-forte);
+    }
+
+    .logo-link span:last-child {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .main-navbar ul li a {
+        font-family: var(--font-nunito);
+        font-size: 1.55rem;
+    }
+
+    .main-navbar ul li:not(:first-child)::before {
+        content: "|";
+        color: var(--cor-branco);
+        margin: 0 0.625rem;
+        font-size: 1.55rem;
+    }
+}
+
+.menu-toggle-button {
+    display: none;
+}
+
+.main-sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 90%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: var(--cor-cinza-escuro);
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    align-items: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+}
+
+.main-sidebar.active {
+    right: 0;
+}
+
+.menu-toggle-button {
+    color: var(--cor-branco);
+    font-size: 2rem;
+}
+
+.close-button {
+    color: var(--cor-branco);
+    font-size: 2rem;
+    align-self: flex-end;
+    padding-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover, .main-sidebar ul li:hover {
+    color: var(--cor-amarelo-regular);
+}
+
+.main-sidebar ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+@media (max-width: 1350px) {
+    .menu-toggle-button {
+        display: block;
+    }
+
+    .main-navbar {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .main-header {
+        padding: 0 30px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .logo-link {
+        line-height: 2rem;
+    }
+
+    .logo-link span:first-child {
+        font-size: 3rem;
+        color: var(--cor-amarelo-forte);
+    }
+
+    .logo-link span:last-child {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo-link {
+        line-height: 2rem;
+    }
+
+    .logo-link span:first-child {
+        font-size: 2.5rem;
+        color: var(--cor-amarelo-forte);
+    }
+
+    .logo-link span:last-child {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
 
 .hero-section {
@@ -950,8 +1070,8 @@ body {
 
 @media (max-width: 520px) {
     .contact-section {
-    margin-top: var(--espaço-entre-section);
-    padding: 0rem;
+        margin-top: var(--espaço-entre-section);
+        padding: 0rem;
     }
 
     .contact-form h5 {
@@ -979,12 +1099,12 @@ body {
 }
 
 @media (max-width: 420px) {
-        .contact-section {
+    .contact-section {
         margin-top: var(--espaço-entre-section);
         padding: 0rem;
     }
 
-.contact-form h5 {
+    .contact-form h5 {
         font-family: var(--font-montserrat);
         font-size: 1.6rem;
         font-weight: var(--font-weight-bold);
@@ -1005,6 +1125,12 @@ body {
     .contact-input::placeholder {
         font-family: var(--font-montserrat);
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .contact-text-area {
+        padding: 3.125rem 0rem;
     }
 }
 

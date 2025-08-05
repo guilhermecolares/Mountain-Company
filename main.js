@@ -49,3 +49,28 @@ if (prevButton && nextButton) {
         swiper.slideNext()
     })
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggleButton = document.querySelector('.menu-toggle-button')
+    const mainSideBar = document.querySelector('.main-sidebar')
+    const closeButton = document.querySelector('.close-button')
+    const sideBarLinks = document.querySelectorAll('.main-sidebar a')
+
+    const openMenu = () => {
+        mainSideBar.classList.add('active')
+    }
+
+    const closeMenu = () => {
+        mainSideBar.classList.remove('active')
+    }
+
+    menuToggleButton.addEventListener('click', openMenu)
+
+    closeButton.addEventListener('click', closeMenu)
+
+    sideBarLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            closeMenu()
+        })
+    })
+})
