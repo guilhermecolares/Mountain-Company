@@ -362,7 +362,7 @@ body {
 }
 
 .hero-section {
-    background-image: url('/IMG/HERO_SECTION/hero_section.jpg');
+    background-image: url('IMG/HERO_SECTION/hero_section.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -462,21 +462,21 @@ body {
 }
 
 .card-service:nth-child(1) {
-    background-image: url(/IMG/SERVICOS/gestao.jpg);
+    background-image: url(IMG/SERVICOS/gestao.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card-service:nth-child(2) {
-    background-image: url(/IMG/SERVICOS/financeiro.jpg);
+    background-image: url(IMG/SERVICOS/financeiro.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card-service:nth-child(3) {
-    background-image: url(/IMG/SERVICOS/marketing.jpg);
+    background-image: url(IMG/SERVICOS/marketing.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -557,7 +557,7 @@ body {
 }
 
 .about-us-img:first-child {
-    background-image: url(/IMG/SOBRE_NOS/sobre_nos_img_1.jpg);
+    background-image: url(IMG/SOBRE_NOS/sobre_nos_img_1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -568,7 +568,7 @@ body {
 }
 
 .about-us-img:last-child {
-    background-image: url(/IMG/SOBRE_NOS/sobre_nos_img_2.jpg);
+    background-image: url(IMG/SOBRE_NOS/sobre_nos_img_2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
